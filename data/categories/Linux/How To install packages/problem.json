@@ -1,18 +1,18 @@
 {
-    "title": "How To install packages",
-    "description": "this is steps that you have to do to install any packages",
-    "solution": [
-        {
-            "description": "upgrade you package manager",
-            "command": "sudo apt upgrade"
-        },
-        {
-            "description": "update you system manager",
-            "command": "sudo apt update"
-        },
-        {
-            "description": "start installing",
-            "command": "sudo apt install <your_package>"
-        }
-    ]
+  "title": "How To install packages",
+  "description": "These are the steps to install a package.",
+  "solution": [
+    {
+      "description": "Update the package index",
+      "command": "sudo apt update"
+    },
+    {
+      "description": "Upgrade installed packages",
+      "command": "sudo apt upgrade"
+    },
+    {
+      "description": "Install the package",
+      "command": "sudo apt install <package>"
+    }
+  ]
 }
