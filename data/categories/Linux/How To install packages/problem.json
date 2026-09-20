@@ -1,0 +1,18 @@
+{
+    "title": "How To install packages",
+    "description": "this is steps that you have to do to install any packages",
+    "solution": [
+        {
+            "description": "upgrade you package manager",
+            "command": "sudo apt upgrade"
+        },
+        {
+            "description": "update you system manager",
+            "command": "sudo apt update"
+        },
+        {
+            "description": "start installing",
+            "command": "sudo apt install <your_package>"
+        }
+    ]
+}

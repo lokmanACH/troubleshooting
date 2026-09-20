@@ -1,0 +1,52 @@
+{
+  "title": "Connect to a Linux Machine via SSH (With Private Keys)",
+
+  "description": "SSH (Secure Shell) allows you to securely connect from Machine 1 (client) to Machine 2 (server). Machine 2 must have the OpenSSH server installed and running, while Machine 1 needs an SSH key pair. The private key stays on Machine 1 and the public key is added to Machine 2.",
+
+  "solution": [
+    {
+      "description": "Update the package list on Machine 2 before installing the SSH server.",
+      "command": "sudo apt update"
+    },
+    {
+      "description": "Install the OpenSSH server on Machine 2 so it can accept incoming SSH connections.",
+      "command": "sudo apt install openssh-server"
+    },
+    {
+      "description": "Check whether the OpenSSH server package is installed.",
+      "command": "dpkg -l | grep openssh-server"
+    },
+    {
+      "description": "Check whether the SSH service is currently running on Machine 2.",
+      "command": "sudo systemctl status ssh"
+    },
+    {
+      "description": "Start the SSH service if it is not currently running.",
+      "command": "sudo systemctl start ssh"
+    },
+    {
+      "description": "Enable the SSH service so it starts automatically when Machine 2 boots.",
+      "command": "sudo systemctl enable ssh"
+    },
+    {
+      "description": "Find the IP address of Machine 2 so Machine 1 knows where to connect.",
+      "command": "hostname -I"
+    },
+    {
+      "description": "On Machine 1, generate an Ed25519 SSH key pair. This creates a private key and a public key.",
+      "command": "ssh-keygen -t ed25519"
+    },
+    {
+      "description": "Copy the public key from Machine 1 to Machine 2. SSH will add it to the user's authorized keys.",
+      "command": "ssh-copy-id username@MACHINE2_IP"
+    },
+    {
+      "description": "Connect from Machine 1 to Machine 2 using SSH. The private key on Machine 1 is used to authenticate.",
+      "command": "ssh username@MACHINE2_IP"
+    },
+    {
+      "description": "Explicitly specify the private key when connecting if SSH does not automatically find it.",
+      "command": "ssh -i ~/.ssh/id_ed25519 username@MACHINE2_IP"
+    }
+  ]
+}

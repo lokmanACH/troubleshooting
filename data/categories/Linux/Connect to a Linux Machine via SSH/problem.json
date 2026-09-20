@@ -1,0 +1,22 @@
+{
+  "title": "Connect to a Linux Machine via SSH",
+  "description": "SSH (Secure Shell) allows you to remotely connect to a Linux server or machine through the terminal. You need the machine's IP address, a username, and usually an SSH private key or password.",
+  "solution": [
+    {
+      "description": "Update the package list",
+      "command": "sudo apt update"
+    },
+    {
+      "description": "Install the SSH client",
+      "command": "sudo apt install openssh-client"
+    },
+    {
+      "description": "Check that SSH is installed",
+      "command": "ssh -V"
+    },
+    {
+      "description": "Connect using username and IP address",
+      "command": "ssh username@SERVER_IP"
+    }
+  ]
+}
