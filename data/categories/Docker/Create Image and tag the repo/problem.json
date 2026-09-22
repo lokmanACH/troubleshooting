@@ -1,0 +1,22 @@
+{
+    "title": "Create Image and tag the repo",
+    "description": "this docker commands will show how to create docker images and tag them to you docker hub repo",
+    "solution": [
+        {
+            "description": "Create Docker image (you must have Dokerfile)",
+            "command": "sudo docker build -t user-service:v1 ."
+        },
+        {
+            "description": "Tag you docker hub repo (you have to login first)",
+            "command": "sudo docker tag user-service:v1  lokman2/user-service:v1"
+        },
+        {
+            "description": "Push your Docker image to your ducker hub repo",
+            "command": "sudo docker push lokman2/user-service:v1"
+        },
+        {
+            "description": "Run the image, and create volume for the .env (the .env must be in the same folder level)",
+            "command": "docker run --name lms_auth_c -v .env:/app/.env:ro -p 3000:3000 lms_auth:v2"
+        }
+    ]
+}
