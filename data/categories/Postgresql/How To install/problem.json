@@ -1,0 +1,30 @@
+{
+    "title": "How To install",
+    "description": "follow these steps to download postgresql",
+    "solution": [
+        {
+            "description": "update the system",
+            "command": "sudo apt update"
+        },
+        {
+            "description": "start the downloading",
+            "command": "apt install postgresql"
+        },
+        {
+            "description": "start the postgres service",
+            "command": "sudo systemctl start postgresql"
+        },
+        {
+            "description": "enable postgres service",
+            "command": "sudo systemctl enable postgresql"
+        },
+        {
+            "description": "restart the service of postgresql",
+            "command": "sudo systemctl restart postgresql"
+        },
+        {
+            "description": "check the status of the service",
+            "command": "sudo systemctl status postgresql"
+        }
+    ]
+}

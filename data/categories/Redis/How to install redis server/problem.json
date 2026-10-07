@@ -1,0 +1,22 @@
+{
+    "title": "How to install redis server",
+    "description": "follow these steps to install redis server and start use it to store data in cache memory",
+    "solution": [
+        {
+            "description": "update the package manager",
+            "command": "sudo apt update"
+        },
+        {
+            "description": "Start the installation via apt",
+            "command": "sudo apt install redis-server"
+        },
+        {
+            "description": "check if redis cli have been installed",
+            "command": "redis-cli --version"
+        },
+        {
+            "description": "connect to redis cli",
+            "command": "redis-cli"
+        }
+    ]
+}

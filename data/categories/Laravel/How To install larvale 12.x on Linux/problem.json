@@ -1,0 +1,14 @@
+{
+    "title": "How To install larvale 12.x on Linux",
+    "description": "follow this commands to install laravel, NOTE : the php and composer will installed automatically.",
+    "solution": [
+        {
+            "description": "install the curl if you don't have",
+            "command": "sudo apt install curl"
+        },
+        {
+            "description": "start downloading laravel from from the official website",
+            "command": "/bin/bash -c \"$(curl -fsSL https://php.new/install/linux/8.4)\""
+        }
+    ]
+}

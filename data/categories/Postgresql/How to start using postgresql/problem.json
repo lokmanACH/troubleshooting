@@ -1,0 +1,18 @@
+{
+    "title": "How to start using postgresql",
+    "description": "here you will learn how to start use posgresql from your terminla",
+    "solution": [
+        {
+            "description": "On Ubuntu, use the default postgres administrative user",
+            "command": "sudo -u postgres psql"
+        },
+        {
+            "description": "List databases",
+            "command": "\\l"
+        },
+        {
+            "description": "connect to another database",
+            "command": "sudo -u postgres psql -d your_DB"
+        }
+    ]
+}
