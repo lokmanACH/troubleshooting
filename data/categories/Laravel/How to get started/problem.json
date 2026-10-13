@@ -1,0 +1,14 @@
+{
+    "title": "How to get started",
+    "description": "in this section you will learn how to start creating the laravel project",
+    "solution": [
+        {
+            "description": "Create the project",
+            "command": "laravel new my-app"
+        },
+        {
+            "description": "Start the Laravel server",
+            "command": "php artisan serve"
+        }
+    ]
+}
