@@ -9,6 +9,10 @@
         {
             "description": "Start the Laravel server",
             "command": "php artisan serve"
+        },
+        {
+            "description": "OR you can run this command and run anything you need",
+            "command": "composer run dev"
         }
     ]
 }
